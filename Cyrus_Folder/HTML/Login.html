@@ -16,22 +16,22 @@
     </video>
 
     <div class="container1">
-        <form method="G">
+        <form method="post" action="PHP/Login.php">
 
             <h1>Login</h1>
             <div class="InputBox">
-                <input type="text", class="Uname", id="Uname", placeholder="Username", required>
+                <input type="text", class="Uname", name = "Username", id="Uname", placeholder="Username", required>
                 <i class='bx bxs-user-rectangle'></i>
             </div>
 
             <div class="InputBox">
-                <input type="password", class="Pass", id="Pass", placeholder="Password", required>
+                <input type="password", class="Pass", name = "Password", id="Pass", placeholder="Password", required>
                 <i class='bx bxs-lock' ></i>
             </div>
 
-            
-                <input class="BTN1", type="button", value="Login" onclick="INFOchecking1()">
-            
+            <div>
+                <button type="submit", class="BTN1">Login</button>
+            </div>
 
             <div class="register">
                 <p>Don't you have an account? <a href="index.html">Register</a></p>
