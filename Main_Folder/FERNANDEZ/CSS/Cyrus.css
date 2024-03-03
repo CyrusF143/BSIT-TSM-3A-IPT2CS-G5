@@ -98,3 +98,62 @@ section{
     width: 90%;
     text-align: justify;
 }
+
+
+.technical_info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-gap: 2rem;
+    background-image: url(src/BG2.1.jpg);
+    background-size: cover;
+}
+
+.technical_info .image_technical{
+    text-align: center;
+    position: relative;
+}
+
+.technical_info .image_technical img{
+   width: 350px;
+   height: auto;
+   filter: drop-shadow(-10px -10px 10px blue);
+}
+
+.technical_info .about_me{
+    padding-left: 5%;
+    width: 100%;
+    color: aliceblue;
+    text-align: justify;
+}
+
+.technical_info .about_me p{
+    font-size: 20px;
+    line-height: 5px;
+}
+
+.technical_info .about_me h1{
+    line-height: 60px;
+}
+
+.technical_info .about_me .qoute{
+    line-height: 20px;
+}
+
+.technical_info .Tec_Title{ 
+    color: black;
+    font-style: italic;
+    font-size: 220%;
+    text-align: center;
+    text-shadow: 0 0 3px #01ffff, 0 0 5px #79f6fc;
+    filter: drop-shadow(-10px -10px 10px rgb(253, 251, 252));
+}
+
+.Tec_Title .blob{
+    position:fixed;
+    width: 140%;
+    height: 10%;
+    z-index: -1;
+    top: -40%;
+    left: -50px;
+}
