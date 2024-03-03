@@ -49,3 +49,52 @@ header{
     border-radius: 10px;
     box-shadow: inset 200px 0 0 0 #54b3d6
 }
+
+
+.personal{
+    color: white;
+    min-height: 100vh;
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.personal_image img{
+    height: 70%;
+    width: 70%;
+    border-radius: 100%;
+}
+
+.personal_image img:hover{
+    filter: drop-shadow(-10px -10px 10px blue);
+}
+
+section{
+    padding: 100px 5%;
+}
+
+.Pcontent{
+    padding-top: 10%;
+}
+
+.Pcontent h1{
+    font-size: 50px;
+}
+
+.contents h4{
+    font-size: 25px;
+    padding-left: 2%;
+    line-height: 35px;
+}
+
+.contents p{
+    font-size: 15px;
+    line-height: 40px;
+    
+}
+
+.contents{
+    width: 90%;
+    text-align: justify;
+}
