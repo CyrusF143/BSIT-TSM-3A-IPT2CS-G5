@@ -10,6 +10,7 @@ body{
     background-image: url(src/Cybg.jpg);
     background-size: 100% 65%;
     background-repeat: no-repeat;
+    cursor: none;
 }
 
 header{
@@ -222,7 +223,7 @@ span{
 
 .skill_bar .bar .java{
     width: 70%;
-    animation: java 3s;
+    animation: java 4s;
 }
 @keyframes java{
     0%{
@@ -356,7 +357,7 @@ span{
     font-size: 15px;
 }
 
-.circle{
+.circle_2{
     width: 100%;
     height: 120px;
     display: flex;
@@ -364,7 +365,7 @@ span{
     align-items: center;
 }
 
-.circle .points{
+.circle_2 .points{
     width: 2px;
     height: 10px;
     background-color: #0501ff;
@@ -467,32 +468,38 @@ font-weight: 700;
 
 .BOX1:hover {
     background-image: url(src/Anime.jpg);
-    background-size: cover;
     background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center; 
+
 }
 
 .BOX2:hover{
     background-image: url(src/ML.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center center; 
 }
 
 .BOX3:hover{
     background-image: url(src/rides.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center center; 
 }
 
 .BOX4:hover{
     background-image: url(src/Electronic.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center center; 
 }
 
 .BOX5:hover{
     background-image: url(src/sleeping\ anime.jpg);
     background-size:cover;
     background-repeat: no-repeat;
+    background-position: center center; 
 }
 
 .hobbies_icons{
@@ -504,3 +511,16 @@ font-weight: 700;
     align-items: center;
     font-size: 4rem;
 }
+
+
+.circle {
+    height: 24px;
+    width: 24px;
+    border-radius: 24px;
+    background-color: black;
+    position: fixed; 
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    z-index: 99999999; /* so that it stays on top of all other elements */
+  }
