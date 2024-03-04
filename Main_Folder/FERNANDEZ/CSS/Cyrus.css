@@ -388,7 +388,7 @@ span{
         box-shadow: none;
     }
     100%{
-        background: red;
+        background: white;
         box-shadow: 1px 1px 10px 1px #01ffff;
     }
 }
