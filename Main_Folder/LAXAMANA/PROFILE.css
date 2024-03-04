@@ -65,3 +65,20 @@ body {
     
 }
 
+.intro {
+    color: white;
+    text-align: center;
+    padding-top: 230px;
+    padding-bottom: 270px;
+}
+.info {
+    font-family: Bradley Hand, cursive;
+    font-size: 20px;
+}
+.name {
+    font-family: Bradley Hand, cursive;
+}
+.hello {
+    font-size: 50px;
+    padding-bottom: 20px;
+}
