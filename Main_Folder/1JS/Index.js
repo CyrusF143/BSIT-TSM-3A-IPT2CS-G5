@@ -26,7 +26,7 @@ more.addEventListener('mouseleave', ()=>{
 
 
 function Cyruspage(){
-    window.location.href = "/FERNANDEZ/Cyrus_Portfolio.html"; 
+   location.href = "FERNANDEZ/Cyrus_Portfolio.html";
 }
 function Laxamanapage(){
     
