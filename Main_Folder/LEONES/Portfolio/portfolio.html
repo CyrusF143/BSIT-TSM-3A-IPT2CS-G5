@@ -7,23 +7,80 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <header>
-            <h1>John Alvin Leones</h1>
-        </header>
-        <section>
-            <h2>About Me</h2>
-            <p>Age: 20</p>
-            <p>Address: Apsayan Gerona, Tarlac</p>
-            <p>Contact Number: 09456478089</p>
-            <p>Likes: Coffee</p>
-            <p>Hobby: Watching anime and playing online/offline games</p>
+    <header>
+        <div class="hero">
+            <h1>Welcome to My Portfolio</h1>
+            <p>Explore basic information about</p> <h2>John Alvin</h2>
+        </div>
+        <nav>
+            <button id="about-me-btn" data-target="about-me">About me</button>
+            <button id="hobbies-btn" data-target="hobbies">Hobbies</button>
+            <button id="social-media-btn" data-target="social-media">Social Media</button>
+        </nav>        
+    </header>
+    <main>
+        <section id="about-me" class="profile">
+            <div class="profile-info">
+                <h2>About Me</h2>
+                <div class="profile-details">
+                    <div class="profile-pic-container">
+                        <img src="me.jpg" alt="John Alvin Leones" class="profile-pic">
+                    </div>
+                    <div class="profile-text">
+                        <div class="column">
+                            <p class="intro">Hi, I'm John Alvin Leones, a student at Tarlac State University. I'm pursuing a Bachelor of Science in Information Technology Major in Technical Service Management.</p>
+                        </div>
+                        <div class="column">
+                            <p class="interests">I'm passionate about coffee and enjoy spending my free time watching anime and playing both online and offline games.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="hobbies" class="hobbies">
+            <h2>Hobbies</h2>
+            <div class="hobbies-images">
+                <div class="hobby">
+                    <a href="https://en.volia.biz/" target="_blank">
+                        <img src="dgn.jpg" alt="Hobby 1">
+                        <div class="overlay">
+                            <div class="text-top">Role Playing Games</div>
+                            <div class="text-bottom">Dragon Saga</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="hobby">
+                    <a href="https://aniwave.to/home" target="_blank">
+                        <img src="anime.jpg" alt="Hobby 2">
+                        <div class="overlay">
+                            <div class="text-top">Watching animes</div>
+                            <div class="text-bottom">Anime</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>                                           
+        <section id="social-media" class="social-media">
+            <h2>Social Media Platforms</h2>
             <ul>
-                <h2>Social Media Accounts</h2>
-                <li><h4><a href="https://www.facebook.com/immystik">Facebook</a></h4></li>
-                <li><h4><a href="https://www.tiktok.com/@xynnohitama">TikTok</a></h4></li>
+                <li>
+                    <a href="https://www.facebook.com/immystik">
+                        <img src="fb.jpg" alt="Facebook" class="social-icon"> Facebook
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.tiktok.com/@xynnohitama">
+                        <img src="tiktok.jpg" alt="TikTok" class="social-icon"> TikTok
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/theonealvin/">
+                        <img src="insta.jpg" alt="Instagram" class="social-icon"> Instagram
+                    </a>
+                </li>
             </ul>
         </section>
-    </div>
+    </main>
+    <script src="script.js"></script>
 </body>
 </html>
