@@ -8,4 +8,10 @@ document.addEventListener('DOMContentLoaded', () => {
             targetSection.scrollIntoView({ behavior: 'smooth' });
         });
     });
+
+    const header = document.querySelector('header');
+    header.classList.add('animate');
+
+    const body = document.querySelector('body');
+    body.classList.add('animate');
 });
