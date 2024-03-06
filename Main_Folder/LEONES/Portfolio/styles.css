@@ -8,20 +8,36 @@ body {
     background-size: contain;
     background-position: center;
     color: #333;
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: opacity 1s ease, transform 1s ease;
+}
+
+body.animate {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+header {
+    text-align: center;
+    padding: 200px 20px;
+    background-color: rgba(255, 255, 255, 0.918);
+    border-bottom: 1px solid #000000;
+    margin-bottom: 300px;
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: opacity 1s ease, transform 1s ease;
 }
 
 .hero h2 {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif   ;
     font-size: 250%;
-    color: #29044d;
+    color: #2b2a2a;
 }
 
-header {
-    text-align: center;
-    padding: 250px 20px;
-    background-color: rgba(255, 255, 255, 0.9);
-    border-bottom: 1px solid #ddd;
-    margin-bottom: 350px;
+header.animate {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 header .hero h1 {
@@ -34,6 +50,30 @@ header .hero p {
     margin-bottom: 0;
 }
 
+.header-left {
+    position: absolute;
+    top: 30px;
+    left: 20px;
+}
+
+.home-button {
+    padding: 12px 24px;
+    background-color: #2196f3;
+    color: #141c35;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.home-button:hover {
+    background-color: rgba(240, 240, 240, 0.7);
+}
+
 nav {
     margin-top: 20px;
 }
@@ -43,15 +83,17 @@ nav button {
     padding: 12px 24px;
     border: none;
     border-radius: 5px;
-    background-color: #321568;
-    color: #fff;
+    background-color: #2196f3;
+    color: #1b1b1b;
     font-size: 18px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
 }
 
 nav button:hover {
-    background-color: #c8cacc;
+    background-color: #1565c0;
 }
 
 main {
@@ -60,12 +102,16 @@ main {
 
 section {
     padding: 30px;
-    background-color: rgba(255, 255, 255, 0.7);
+    background-color: rgba(240, 240, 240, 0.7);
     border-radius: 10px;
     margin-bottom: 40px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(201, 201, 201, 0.952);
     max-width: 800px;
     margin: 0 auto;
+}
+
+section:hover {
+    background-color: rgba(255, 255, 255, 0.9);
 }
 
 .profile-pic-container {
@@ -103,7 +149,7 @@ section {
     padding: 30px;
     background-color: rgba(255, 255, 255, 0.7);
     border-radius: 10px;
-    margin-bottom: 40px;
+    margin-bottom: 400px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     max-width: 800px;
     margin-top: 400px;
@@ -179,6 +225,39 @@ section {
     text-decoration: underline;
 }
 
+.highlights {
+    padding: 50px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 10px;
+    margin-bottom: 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+.highlights h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.video-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.video {
+    width: 350px;
+    height: 300px;
+
+}
+
+.video p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
 
 .social-media {
     text-align: center;
@@ -217,4 +296,5 @@ section {
 
 .social-media ul li a:hover {
     text-decoration: underline;
+    color: #1565c0; 
 }
