@@ -93,7 +93,7 @@ nav button {
 }
 
 nav button:hover {
-    background-color: #1565c0;
+    background-color: rgba(240, 240, 240, 0.7);
 }
 
 main {
