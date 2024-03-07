@@ -6,7 +6,6 @@
 }
 
 body{
-    background-color:   ;
     background-image: url(src/Cybg.jpg);
     background-size: 100% 65%;
     background-repeat: no-repeat;
@@ -388,7 +387,7 @@ span{
         box-shadow: none;
     }
     100%{
-        background: white;
+        background: red;
         box-shadow: 1px 1px 10px 1px #01ffff;
     }
 }
@@ -522,5 +521,5 @@ font-weight: 700;
     top: 0;
     left: 0;
     pointer-events: none;
-    z-index: 99999999; /* so that it stays on top of all other elements */
+    z-index: 99999999;
   }
