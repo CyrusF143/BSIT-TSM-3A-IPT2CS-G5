@@ -63,7 +63,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-top: 150px;
+    padding-top: 70px;
     padding-left: 60px;
     color: white;
 }
@@ -262,4 +262,94 @@ img:hover {
     left: 0;
     right: initial;
     z-index: 3; /* Ensure the text is in front */
+}
+
+/* CSS FOR SKILLS */
+
+.SKILLS1 {
+    background: black;
+    background-size: cover;
+}
+
+.SKILL1 h1 {
+    padding-bottom: 50px;
+    font-family: cursive;
+    font-size: 70px;
+    text-align: center;
+    color: white;
+    padding-top: 50px;
+}
+
+.Skill {
+    margin: 0;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+
+}
+
+.contain {
+    display: flex;
+}
+
+.card {
+    height: 300px;
+    margin: 30px;
+    box-shadow: 5px 5px 20px black;
+    overflow: hidden;
+}
+
+.prog {
+    height: 300px;
+    width: 250px;
+    border-radius: 3px;
+    transition: 0.5s ease;
+}
+
+.describe {
+    text-align: center;
+    height: 100px;
+    width: 250px;
+    padding: 6px;
+    box-sizing: border-box;
+    position: absolute;
+    background: rgb(27, 27, 27, .5);
+    color: white;
+    bottom: -1935px;
+    transition: 0.5s ease;
+}
+
+.describe h1 {
+    margin: 10px;
+    font-size: 40px;
+}
+
+.describe p {
+    margin: 0px;
+    font-size: 20px;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.Skill span {
+    font-weight: bold;
+}
+
+.card:hover {
+    cursor: pointer;
+}
+
+.card:hover .describe {
+    height: 220px;
+    width: 250px;
+    background: black;
+}
+
+.card:hover .prog {
+    transform: scale(2.1) rotate(-3deg);
+}
+
+.card:hover p {
+    opacity: 1;
+    visibility: visible;
 }
