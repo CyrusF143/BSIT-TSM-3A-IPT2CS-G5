@@ -18,7 +18,7 @@ body {
     position: fixed;
     width: 230px;
     height: 100%;
-    background: white;
+    background: grey;
     left: -250px;
     transition: .45s ease;
     border-radius: 0px 10px 10px 0px;
@@ -30,7 +30,13 @@ body {
     z-index: 2;
 }
 
+#sidebar h1 {
+    text-align: center;
+    padding-top: 30px;
+}
+
 #sidebar a {
+    
     text-decoration: none;
     list-style: none;
     color: black;
@@ -352,4 +358,51 @@ img:hover {
 .card:hover p {
     opacity: 1;
     visibility: visible;
+}
+
+/* FOR CONTACT INFO */
+.contacts1 {
+    font-family: cursive;
+    place-items: center;
+    background-image: url(bg5.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+ 
+    text-align: center;
+    padding: 80px;
+}
+
+.banner {
+    background: none;
+    backdrop-filter: blur(5px);
+}
+
+.CI {
+    color: white;
+    font-family: cursive;
+    font-size: 60px;
+    font-weight: bolder;
+    padding-bottom: 70px;
+    
+}
+
+.contact1 h1 {
+    padding-top: 10px;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 40px;
+    padding-bottom: 0px;
+}
+
+.contact1 a {
+    text-decoration: none;
+    color: white;
+    font-family: cursive;
+    font-size: 40px;
+}
+
+.contact1 img {
+    border-radius: 50px;
+    height: 200px;
+    width: 200px;
 }
