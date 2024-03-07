@@ -9,24 +9,25 @@
 </head>
 
 <body>
+    
      <!-- NAVBAR -->
     <div class="head">
-        <div class="upper">
-            <div class="Logo">
-                <h1>MY WORLD</h1>
+        <div id="sidebar">
+            <div class="btn" onclick="show()">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
-
-            <div class="navbar">
-                <ul>
-                   <li><a href="#">HOME</a></li>
-                   <li><a href="#">ABOUT ME</a></li>
-                   <li><a href="#">HOBBIES</a></li>
-                   <li><a href="#">CONTACT INFO</a></li>
-                   <li><a href="#">THEME</a></li>
-                </ul>
-            </div>
+    
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#about">ABOUT ME</a></li>
+                <li><a href="#Hobbies1">HOBBIES</a></li>
+                <li><a href="#">SKILLS</a></li>
+                <li><a href="#">CONTACT INFO</a></li>
+            </ul>
         </div>
-         <!-- WELCOME PAGE -->
+        <!-- WELCOME PAGE -->
         <div class="home">
             <div class="greet">
                 <h1 class="hi">Hi I'am</h1>
@@ -39,19 +40,19 @@
         </div>
     </div>
  <!-- For ABOUT ME -->
-    <div class="about">
-    <div class="intro">
-        <h1 class="hello">Hello Welcome To My World</h1>
-        <p class="info">By the way my name is <b class="name">Ryan Laxamana</b>, a student at Tarlac State University under the course of <br>   
-            Bachelor of Science in Information Technology Major in Networking Administration. <br>
-             I'am 21 years old and currently residing in Cristo rey Capas,
-            Tarlac. <br>
-            I hope you enjoy in visiting my Profile Web.
-        </p>
-    </div>
+    <div class="about" id="about">
+        <div class="intro">
+            <h1 class="hello">Hello Welcome To My World</h1>
+            <p class="info">By the way my name is <b class="name">Ryan Laxamana</b>, a student at Tarlac State University under the course of <br>   
+                Bachelor of Science in Information Technology Major in Networking Administration. <br>
+                I'am 21 years old and currently residing in Cristo rey Capas,
+                Tarlac. <br>
+                I hope you enjoy in visiting my Profile Web.
+            </p>
+        </div>
     </div>  
  <!-- For Hobbies page --> 
-    <div class="Hobbies1">
+    <div class="Hobbies1" id="Hobbies1">
         <div class="HOBBIES">
             <h1>HOBBIES</h1>
         </div>
@@ -60,10 +61,10 @@
         
         <div class="slider" id="kdrama-slider">
            
-    
+            
             <div class="slide-track">
     
-                
+                <!-- Your image slides here -->
                 <div class="slide">
                     <img src="KD1.jpg" alt="">
                     <div class="kdtitle">
@@ -188,7 +189,7 @@
                 </div>
             </div>  
         </div>
-    
+        
         <div>
             <div class="HBE">
                 <h1>WATCHING KDRAMA</h1>
@@ -196,6 +197,7 @@
                 Here are several samples of Kdrama's I already Watch</p>
             </div>
         </div>
+        
     
           
     
@@ -204,7 +206,7 @@
             
             <div class="slide-track">
     
-            
+                <!-- Your image slides here -->
     
                 <div class="slide">
                     <img src="MW1.jpg" alt="">
@@ -342,7 +344,7 @@
         </div>
     
     </div>
-    <script src="ryan.js"></script>
+    <script src="PROFILE.js"></script>
 </body>
 
 </html>
