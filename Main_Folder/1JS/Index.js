@@ -29,11 +29,11 @@ function Cyruspage(){
    location.href = "FERNANDEZ/Cyrus_Portfolio.html";
 }
 function Laxamanapage(){
-    
+  location.href = "LAXAMANA/PROFILE.html";
 }
 function Alvinpage(){
-    
+  location.href = "LEONES/Portfolio/portfolio.html";
 }
 function Elsonpage(){
-    
+  location.href = "QUIAMBAO/index.html";
 }
