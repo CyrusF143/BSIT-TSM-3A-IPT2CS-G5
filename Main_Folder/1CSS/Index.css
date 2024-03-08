@@ -1,12 +1,213 @@
-*{
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap");
+
+*,
+*::before,
+*::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Arial Narrow Bold', sans-serif;
 }
 
 body{
-    background-image: url(SRC/Main\ BG.jpg);
+    background-image: url(SRC/BG\ IMAGE1.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    font-family: Inter, sans-serif;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+body {
+    font-family: Inter, sans-serif;
+    height: 100vh;
+    color: white;
+    background-color: #e9e9f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  img {
+    width: 100%;
+    height: 100%;
+    display: block;
+  }
+  
+  .container {
+    width: 100%;
+    width: 1100px;
+    height: 600px;
+    display: flex;
+    gap: 10px;
+    margin-inline: 50px;
+    filter: drop-shadow(-10px -10px 10px #ff1919);
+  }
+  
+  .card {
+    min-width: 70px;
+    height: 100%;
+    border-radius: 30px;
+    overflow: hidden;
+  
+    display: flex;
+    align-items: flex-end;
+    flex-grow: 1;
+    cursor: pointer;
+    position: relative;
+    transition: 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  
+    --transition-timing: 0.25s;
+  }
+  .card.active {
+    flex-grow: 100;
+  }
+
+  .card.active.cyrus:hover {
+    background-color: #eee;
+    background-position: center;
+    background-size: cover;
+    
+    animation: cyrus 2s infinite alternate;
+  }
+
+  @keyframes cyrus {
+    0% {
+      background-image: url('SRC/Cyrus1.jpg');
+    }
+    100% {
+      background-image: url('SRC/cyrus\ 2.0\ -\ Copy.jpg');
+    }
+  }
+
+
+  .card.active.laxamana:hover {
+    background-color: #eee;
+    background-position: center;
+    background-size: cover;
+    
+    animation: laxamana 2s infinite alternate;
+  }
+
+  @keyframes laxamana {
+    0% {
+      background-image: url('SRC/laxamana.jpg');
+    }
+    100% {
+      background-image: url('SRC/Laxamana\ 2.0.jpg');
+    }
+  }
+
+  .card.active.alvin:hover {
+    background-color: #eee;
+    background-position: center;
+    background-size: cover;
+    
+    animation: alvin 2s infinite alternate;
+  }
+
+  @keyframes alvin {
+    0% {
+      background-image: url('SRC/alvin.jpg');
+    }
+    100% {
+      background-image: url('SRC/alvin\ 2.0.jpg');
+    }
+  }
+  
+  .card.active.elson:hover {
+    background-color: #eee;
+    background-position: center;
+    background-size: cover;
+    
+    animation: elson 2s infinite alternate;
+  }
+
+  @keyframes elson {
+    0% {
+      background-image: url('SRC/Elson.jpg');
+    }
+    100% {
+      background-image: url('SRC/Elson\ 3.0.jpg');
+    }
+  }
+
+  .card > .background {
+    position: absolute;
+    inset: 0;
+    object-fit: cover;
+    object-position: left;
+    filter: brightness(0.8);
+    z-index: -1;
+    transition: var(--transition-timing) ease;
+  }
+  .card.active > .background {
+    filter: brightness(1) grayscale(0);
+  }
+  
+  .card > .card-content {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 10px;
+    right: 10px;
+    bottom: 20px;
+    overflow: hidden;
+    transition: var(--transition-timing);
+    z-index: 10;
+  }
+  .card.active > .card-content {
+    inset: 20px;
+    top: auto;
+  }
+  
+  .card-content * {
+    transition: var(--transition-timing);
+  }
+  
+  .card-content > .profile-image {
+    min-width: 50px;
+    max-width: 50px;
+    height: 50px;
+    border: 1px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+  .card.active .profile-image {
+    border: 1px solid rgb(110, 252, 205);
+  }
+  .profile-image > svg {
+    stroke: #fefefe;
+  }
+  .card.active .profile-image > svg {
+    stroke: rgb(110, 252, 205);
+  }
+  
+  .card-content > .title {
+    white-space: pre;
+    margin-left: 10px;
+    translate: 0 100%;
+    opacity: 0;
+    transition-delay: 0.3s;
+  }
+  .card.active .title {
+    opacity: 1;
+    translate: 0 0;
+  }
+  
+  .card > .backdrop {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100px;
+    z-index: 0;
+    background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.7));
+  }
+
+
+  
