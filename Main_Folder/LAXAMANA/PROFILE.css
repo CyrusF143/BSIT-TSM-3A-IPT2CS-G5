@@ -137,6 +137,7 @@ body {
 
 .HOBBIES h1 {
     font-family: cursive;
+    font-weight: 10px;
 }
 
 .container {
@@ -254,20 +255,20 @@ img:hover {
     transform: rotateZ(180deg);
 }
 
-/* Adjustments for text position */
+
 
 .HBN {
     position: absolute;
     right: 0;
     top: 50%;
     transform: translateY(-50%);
-    z-index: 3; /* Ensure the text is in front */
+    z-index: 3; 
 }
 
 #manwha-slider .HBN {
     left: 0;
     right: initial;
-    z-index: 3; /* Ensure the text is in front */
+    z-index: 3; 
 }
 
 /* CSS FOR SKILLS */
@@ -361,7 +362,7 @@ img:hover {
 }
 
 /* FOR CONTACT INFO */
-.contacts1 {
+.contacts {
     font-family: cursive;
     place-items: center;
     background-image: url(bg5.gif);
@@ -405,4 +406,92 @@ img:hover {
     border-radius: 50px;
     height: 200px;
     width: 200px;
+}
+
+/* Night mode */
+.night-mode .head {
+    background-image: url(new3.gif);
+}
+
+.night-mode body {
+    background-color: #f5f5f5; 
+}
+
+
+/* NM for HOBBIES */
+.night-mode .Hobbies1 {
+    background-image: url(new6.png); 
+    background-color: #f5f5f5; 
+
+}
+
+.night-mode .HBE {
+    color: black;
+}
+
+.night-mode .HOBBIES {
+    color: black;
+}
+
+/* NM for sidebar */
+.night-mode .btn span {
+    background-color: black; 
+}
+
+
+/* NM for ABOUTME */
+.night-mode .ryan {
+    font-family: cursive;
+    color: black;
+    font-size: 90px;
+}
+
+.night-mode .hi {
+    font-family: 'Times New Roman', Times, cursive;
+    color: black;
+}
+
+.night-mode .section {
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: black;
+}
+
+.light-bg {
+    background-color: #f5f5f5; 
+}
+
+.light-bg .hello {
+    color: black;
+    font-family: cursive;
+}
+
+.light-bg .info {
+    color: black;
+    font-family: cursive;
+    font-weight: 100;
+}
+
+/* NM for SKILLS */
+
+.night-mode .Skill {
+    
+    background-image: url(new10.jfif);
+    background-size: cover;
+}
+
+.night-mode .SKILL1 h1 {
+    color: black;
+}
+
+/* NM FOR CONTACTINFO */
+.night-mode .contacts {
+    background-image: url(new9.jpg);
+}
+
+.night-mode .banner h1 {
+    color: black;
+}
+
+.night-mode .banner a {
+    color: black;
 }
